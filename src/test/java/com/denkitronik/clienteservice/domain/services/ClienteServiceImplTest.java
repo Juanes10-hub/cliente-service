@@ -58,7 +58,7 @@ class ClienteServiceImplTest {
         Cliente resultado = clienteService.findById(1L);
 
         assertThat(resultado.getId()).isEqualTo(1L);
-        assertThat(resultado.getNombre()).isEqualTo("Linus");
+        assertThat(resultado.getNombre()).isEqualTo("NOMBRE_INCORRECTO");
         verify(clienteDao, times(1)).findById(1L);
     }
 
